@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -741,6 +741,44 @@ Looking footprint for headers.
 <text x="-11.43" y="-44.45" size="0.8128" layer="51" font="vector" ratio="20" align="top-center">USB</text>
 <text x="17.78" y="-39.37" size="0.8128" layer="51" font="vector" ratio="20" align="top-center">PWR JACK</text>
 </package>
+<package name="PARTICLE_ELECTRON">
+<description>&lt;h3&gt;Arduino Pro Mini Footprint&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 34&lt;/li&gt;
+&lt;li&gt;Area: 1.7 x 0.3 in&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;Arduino Pro Mini&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="-8.89" y="13.97" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="-8.89" y="11.43" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-8.89" y="8.89" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-8.89" y="6.35" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="-8.89" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="-8.89" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="-8.89" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="-8.89" y="-3.81" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="-8.89" y="-6.35" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="-8.89" y="-8.89" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="-8.89" y="-11.43" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="-8.89" y="-13.97" drill="1.016" diameter="1.8796"/>
+<pad name="13" x="8.89" y="-13.97" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="8.89" y="-11.43" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="8.89" y="-8.89" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="8.89" y="-6.35" drill="1.016" diameter="1.8796"/>
+<pad name="17" x="8.89" y="-3.81" drill="1.016" diameter="1.8796"/>
+<pad name="18" x="8.89" y="-1.27" drill="1.016" diameter="1.8796"/>
+<pad name="19" x="8.89" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="20" x="8.89" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="21" x="8.89" y="6.35" drill="1.016" diameter="1.8796"/>
+<pad name="22" x="8.89" y="8.89" drill="1.016" diameter="1.8796"/>
+<pad name="23" x="8.89" y="11.43" drill="1.016" diameter="1.8796"/>
+<pad name="24" x="8.89" y="13.97" drill="1.016" diameter="1.8796"/>
+<text x="0" y="-16.891" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.127" layer="21"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PRO_MINI">
@@ -789,10 +827,6 @@ Looking footprint for headers.
 <text x="-2.54" y="6.985" size="1.27" layer="94">(SS_TX)</text>
 </symbol>
 <symbol name="NODEMCU">
-<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
 <pin name="D0" x="-15.24" y="15.24" length="middle" direction="pas"/>
 <pin name="D1" x="-15.24" y="12.7" length="middle" direction="pas"/>
 <pin name="D2" x="-15.24" y="10.16" length="middle" direction="pas"/>
@@ -809,6 +843,14 @@ Looking footprint for headers.
 <pin name="VIN" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
 <text x="-4.445" y="6.985" size="1.27" layer="94">SDA</text>
 <text x="-4.445" y="4.445" size="1.27" layer="94">SCL</text>
+<wire x1="-12.7" y1="-15.24" x2="-10.16" y2="-17.78" width="0.1524" layer="94" curve="90"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="12.7" y2="-15.24" width="0.1524" layer="94" curve="90"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="10.16" y2="17.78" width="0.1524" layer="94" curve="90"/>
+<wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="-12.7" y2="15.24" width="0.1524" layer="94" curve="90"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="ARDUINO_R3_SHIELD">
 <description>&lt;h3&gt;Arduino Uno R3-No ICSP&lt;/h3&gt;
