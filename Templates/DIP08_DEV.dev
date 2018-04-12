@@ -2,12 +2,12 @@
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
 <pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
 <pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
 <pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
 <wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
@@ -23,7 +23,7 @@
 <vertex x="-5.715" y="-3.65125" curve="-90"/>
 </polygon>
 </package>
-<symbol name="DIP08_SYM">
+<symbol name="P08_SYM">
 <pin name="P$1" x="-12.7" y="7.62" length="short" direction="pas"/>
 <pin name="P$2" x="-12.7" y="2.54" length="short" direction="pas"/>
 <pin name="P$3" x="-12.7" y="-2.54" length="short" direction="pas"/>
@@ -40,7 +40,7 @@
 </symbol>
 <deviceset name="DIP08_DEV">
 <gates>
-<gate name="G$1" symbol="DIP08_SYM" x="0" y="0"/>
+<gate name="G$1" symbol="P08_SYM" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIP08">
